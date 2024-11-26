@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
+}
+
+body {
+  background: #faf9f7;
+  /* color: white; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  background-color: #faf9f7;
+  width: 100%;
+}
+
+nav>ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav>ul>a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#abstract {
+  width: 70%;
+  margin-inline: auto;
+}
+
+#abstract>h2 {
+  margin-block: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+#home {
+  background: url("../img/utepcarousel.png");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home>h1 {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  font-size: 50px;
+  text-align: center;
+  width: 50%;
+  margin-block: 40px;
+}
+
+#work {
+  width: 70%;
+  margin-inline: auto;
+  margin-block: 40px;
+}
+
+#work>h2 {
+  margin-block: 20px;
+}
+
+#work>ul>div>li {
+  padding-block: 5px;
+}
+
+#work>ol {
+  padding: 20px;
+  list-style: upper-roman inside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#work>ol>li::marker {
+  font-weight: bold;
+}
+
+#work>ol>li {
+  margin-block: 10px;
+}
+
+#contributors {
+  width: 70%;
+  margin-inline: auto;
+  margin-block: 40px;
+}
+
+#contributors>h2 {
+  text-align: center;
+}
+
+#images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#work>ul {
+  margin-block: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-position: inside;
+}
+
+#work>ul>div>h3 {
+  margin-block: 10px;
+}
+
+#images>img {
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+}
+
+#diagram {
+  margin-block: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#diagram>div {
+  width: 40%;
+}
+
+#diagram>img {
+  width: 40%;
+}
+
+@media only screen and (max-width: 770px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #home>h1 {
+    font-size: 25px;
+  }
+
+  #diagram>div {
+    width: 100%;
+  }
+
+  #diagram>img {
+    width: 100%;
+  }
+}
